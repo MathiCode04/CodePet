@@ -1,0 +1,12 @@
+﻿@model CodePet
+
+<div style="text-align: center; align-content: center; align-items: center">
+<img src="CodePet-Blitzi.png" width="300" height="300">
+<h2>@Model.Name</h2>
+<p>Hungerlevel: @Model.Hunger</p>
+<p>Stimmung: @Model.Stimmung</p>
+
+<form asp-action="Fuettern" method="post">
+    <button type="submit">🍎 Füttern</button>
+</form>
+</div>
